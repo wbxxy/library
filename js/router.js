@@ -19,8 +19,7 @@ router.get('/update', service.toUpdateBook);
 router.post('/updateBook', service.updateBook);
 
 
-
-
+router.get('/delete', service.deleteBook);
 
 
 

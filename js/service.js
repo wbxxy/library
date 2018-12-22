@@ -105,3 +105,17 @@ exports.updateBook = (req, res) => {
 		res.redirect('/');
 	});
 }
+
+//5. 删除逻辑
+exports.deleteBook = (req, res) => {
+	let id = req.query.id;
+	data.forEach((item, i)=>{
+		if(item.id == id){
+			data.splice(i, 1);
+		}
+	});
+	fs.writeFile(path.join(__dirname, 'data.json'), JSON.stringify(data), (err)=>{
+		if(err) res.send('error');
+		res.redirect('/');
+	});
+}
