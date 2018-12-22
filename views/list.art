@@ -3,15 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Library</title>
+	<link rel="stylesheet" type="text/css" href="/css/library.css">
 </head>
 <body>
-	<div>图书馆系统</div>
-	<div>{{title}}
-		<ul>
-			{{each list}}
-				<li>{{$value}}</li>
-			{{/each}}
-		</ul>
+	<div class="head">图书馆系统</div>
+	<div class="content">
+		<table>
+			<thead>
+				<tr>
+					<th>编号</th>
+					<th>书名</th>
+					<th>作者</th>
+					<th>操作  <a href="/add">添加</a></th>
+				</tr>
+			</thead>
+			<tbody>
+				{{each list}}
+				<tr>
+					<td>{{$value.id}}</td>
+					<td>{{$value.book}}</td>
+					<td>{{$value.author}}</td>
+					<td><a href="/update">修改</a>|<a href="delete">删除</a></td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
 	</div>
 </body>
 </html>

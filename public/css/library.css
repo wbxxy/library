@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.head {
+	text-align: center;
+	background-color: pink;
+	height: 80px;
+	line-height: 80px;
+}
+
+.content {
+	background-color: lightblue;
+}
+
+.content table {
+	width: 100%;
+}
+
+.content th, .content td {
+	border: 1px solid orange;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
