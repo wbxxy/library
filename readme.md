@@ -1,9 +1,8 @@
-图书馆系统
+# simple library system
 
-第一
+#### based on node.js
 
-第二
+so, start!
 
-第三
 
-github
+
