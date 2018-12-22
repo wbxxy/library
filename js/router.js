@@ -13,5 +13,18 @@ router.get('/', service.showIndex);
 router.get('/add', service.toAddBook);
 router.post('/addBook', service.addBook);
 
+
+
+router.get('/update', service.toUpdateBook);
+router.post('/updateBook', service.updateBook);
+
+
+
+
+
+
+
+
+
 module.exports = router;
 //module.exports用于return类;

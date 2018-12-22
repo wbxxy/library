@@ -23,7 +23,7 @@
 					<td>{{$value.id}}</td>
 					<td>{{$value.book}}</td>
 					<td>{{$value.author}}</td>
-					<td><a href="/update">修改</a>|<a href="delete">删除</a></td>
+					<td><a href="/update?id={{$value.id}}">修改</a>|<a href="delete?id={{$value.id}}">删除</a></td>
 				</tr>
 				{{/each}}
 			</tbody>
